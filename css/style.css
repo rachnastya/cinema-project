@@ -158,3 +158,57 @@ color: #621402;
 .select-cinema{
     min-width: 470px;
 }
+.scheme{
+    background: rgba(36, 36, 36, 0.18);
+    border-radius: 10px;
+}
+.scheme path:not(.light) {
+    fill: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+.scheme path:not(.light):hover{
+    fill: rgba(255, 255, 255, 0.5);
+}
+.scheme path.booked,
+.scheme path.booked :hover
+{
+    fill: rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+}
+.price{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price-label{
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+}
+.price-tag{
+    font-size: 52px;
+    line-height: 61px;
+}
+
+.scheme-svg path.active {
+    fill: #FE8E05 !important; 
+    fill-opacity: 1 !important;
+}
+.scheme-svg rect, 
+.scheme-svg mask {
+    pointer-events: none;
+}
+.button{
+    display: block;
+    background: #FE8E05;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 24px 52px;
+    text-decoration: none;
+}
+
